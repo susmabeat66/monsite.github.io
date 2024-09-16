@@ -1,88 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-h1, h2 {
-    margin-bottom: 10px;
-}
-
-section {
-    margin: 20px;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.job, .education-item {
-    background-color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-ul {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-ul li {
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.fade-in-image {
-    opacity: 0; /* L'image est invisible au départ */
-    transition: opacity 1.5s ease-in-out; /* Animation de fondu */
-}
-
-.fade-in-visible {
-    opacity: 1; /* Quand l'image est visible, elle devient opaque */
-}
-        </style>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV en ligne</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .job, .education-item {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        ul li {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .fade-in-image {
+            opacity: 0; /* L'image est invisible au départ */
+            transition: opacity 1.5s ease-in-out; /* Animation de fondu */
+        }
+
+        .fade-in-visible {
+            opacity: 1; /* Quand l'image est visible, elle devient opaque */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between; /* Sépare l'image et le texte */
+            align-items: center; /* Centre l'image verticalement par rapport au texte */
+        }
+
+        .container img {
+            margin-left: 20px; /* Espace entre le texte et l'image */
+            max-width: 150px; /* Limite la taille de l'image */
+        }
+
+        .container p {
+            flex: 1; /* Le texte prend tout l'espace disponible */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -95,53 +109,30 @@ footer {
     </header>
 
     <section id="experience">
-        <h2>Expériences </h2>
+        <h2>Expériences</h2>
         <div class="job">
             <h3>Maintenance Informatique</h3>
             <p><strong>Autodidacte</strong></p>
-            <p><strong>Durée:</strong> +6ans </p>
-            <title>Image à droite d'un texte</title>
-            <style>
-                .container {
-                    display: flex;
-                    justify-content: space-between; /* Sépare l'image et le texte */
-                    align-items: center; /* Centre l'image verticalement par rapport au texte */
-                }
-        
-                .container img {
-                    margin-left: 20px; /* Espace entre le texte et l'image */
-                    max-width: 150px; /* Limite la taille de l'image */
-                }
-        
-                .container p {
-                    flex: 1; /* Le texte prend tout l'espace disponible */
-                }
-            </style>
-        </head>
-        <body>
-        
+            <p><strong>Durée:</strong> +6 ans </p>
             <div class="container">
-                <p> Durant toute ma scolarité et encore aujourd'hui j'ai appris a <br>réparer ,démonter et contruire des ordinateurs tout en choisissant <br>les meilleurs composants pour les besoins de chaqu'un.</p>
-
-                <img src="https://univack.fr/2189-superlarge_default/pc-gamer-black-phanteks-nv5-rtx-4070-ti.jpg" alt="Image avec fondu" class="fade-in-image" width=100% height=100% style="text-align: right;">
+                <p> Durant toute ma scolarité et encore aujourd'hui, j'ai appris à réparer, démonter et construire des ordinateurs tout en choisissant les meilleurs composants pour les besoins de chacun.</p>
+                <img src="https://univack.fr/2189-superlarge_default/pc-gamer-black-phanteks-nv5-rtx-4070-ti.jpg" alt="Image avec fondu" class="fade-in-image" style="max-width: 150px;">
             </div>
-        
-        </body>
-            <section id="image-fade-in">
-            </section>
         </div>
+
         <div class="job">
-            <h3>Developpement WEB</h3>
-            <p><strong>Formation a L'IMERIR et Autodidacte</strong></p>
+            <h3>Développement WEB</h3>
+            <p><strong>Formation à l'IMERIR et Autodidacte</strong></p>
             <p><strong>Durée:</strong> 1 an</p>
-            <p>Je suis actuellement entrain d'apprendre <br> l'HTML le CSS le PYTHON que ce soit lors de la formation a l'école <br> IMERIR ou seul a l'aide principalement d'openclassroom</p>
-            <p><strong>Projets:</strong> Quelques sites web comme par exemple celui sur lequel vous etes en ce moment même</p>
+            <p>Je suis actuellement en train d'apprendre l'HTML, le CSS et le Python, que ce soit lors de la formation à l'école IMERIR ou seul à l'aide principalement d'OpenClassroom.</p>
+            <p><strong>Projets:</strong> Quelques sites web comme par exemple celui sur lequel vous êtes en ce moment même.</p>
         </div>
     </section>
-    
 
     <footer>
-        <p>Contact: cedric.leroy@imerir.com |<br> Téléphone: 07 67 01 01 90 <br> <a href="https://www.linkedin.com/in/cédric-leroy-9759282b7/" target="_blank">Mon linkedin avec mon CV plus détaillé</a>        </p>
+        <p>Contact: cedric.leroy@imerir.com | Téléphone: 07 67 01 01 90 <br>
+        <a href="https://www.linkedin.com/in/cédric-leroy-9759282b7/" target="_blank" style="color: #fff;">Mon Linkedin avec mon CV plus détaillé</a>
+        </p>
     </footer>
 
     <script>
@@ -159,6 +150,7 @@ footer {
     </script>
 </body>
 </html>
+
 
        
 
